@@ -47,6 +47,7 @@ def hello():
 ####
     # get response by chatbot() funciton
     response = answer
+    print (response)
     # response json至Teams webhook 
     message =jsonify( {"type": "message", # type: 回覆型態
                        "text": response}) # text: 回覆內容
