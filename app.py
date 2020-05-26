@@ -18,19 +18,19 @@ print(data['prediction']['intents'][topIntent]['score'])
 #data['prediction']['intents']['全部成績']['score']
 
 if topIntent == '成績詢問' :
-    message = "請問您想詢問什麼成績?"
+    answer = "請問您想詢問什麼成績?"
 
 if topIntent == '全部成績' :
-    message = "馬上幫您列出所有成績?"
+    answer = "馬上幫您列出所有成績?"
 
 if topIntent == '國文成績' :
-    message = "馬上幫您列出國文成績"
+    answer = "馬上幫您列出國文成績"
 
 if topIntent == '數學成績' :
-    message = "馬上幫您列出數學成績"
+    answer = "馬上幫您列出數學成績"
 
 if topIntent == '英文成績' :
-    message = "馬上幫您列出英文成績"
+    answer = "馬上幫您列出英文成績"
 
 
 app = Flask(__name__)
