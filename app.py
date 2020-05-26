@@ -20,7 +20,7 @@ def hello():
     # 需要的input在data['text']欄位中，並使用regex來正規化 
     text = re.sub('\<at\>.*\</at\>','',data['text'])
 ####
-    r = requests.get(f'https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/349a200c-2e5d-41ff-9fc7-cac6fe9ab941/slots/production/predict?subscription-key=b70645171382440cbaf63ad0f332d077&verbose=false&show-all-intents=true&log=true&query='+text,headers=headers, params=params)
+    r = requests.get(f'https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/349a200c-2e5d-41ff-9fc7-cac6fe9ab941/slots/production/predict?subscription-key=b70645171382440cbaf63ad0f332d077&verbose=false&show-all-intents=true&log=true&query='+text)
     raw=r.json()
     #print(data['query'])
     #print(data['prediction'])
